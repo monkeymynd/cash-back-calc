@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+	<section>
+		<div class="form-container">
+		    <div class="form-header">
+		        <label>Are you paying for your cash-back rewards?</label>
+		    </div>
+		    <div class="form-sub-header">
+		        <label>FILL OUT THE FORM BELOW TO FIND OUT NOW</label>
+		    </div>
+			<div id="form">
+			    <form action="" method="post" name="registration" class="register">
+			        <fieldset>
+			            <div class="form-group">
+			                <label>What was your balance left over from last month?</label>
+			                <span>$</span><input type="text" class="currency" id="monthBalance" />
+			            </div>
+			            <div class="form-group">
+			                <label>How much did you charge this month?</label>
+			                <span>$</span><input type="text" class="currency" id="monthCharges" />
+			            </div>
+			            <div class="form-group">
+			                <label>Choose a spending category</label>
+							<select>
+							  <option value="cat1">Spending Category 1</option>
+							  <option value="cat2">Spending Category 2</option>
+							  <option value="cat3">Spending Category 3</option>
+							</select> 	                
+			                <span>$</span><input type="text" class="currency" id="spendingCategoryAmount" />
+			            </div>
+			            <div class="form-group">
+			                <label>What was your % cash back?</label>
+			                <span>%</span><input class="percentage" id="spendingCategoryPercentCashBack" />
+			            </div>
+			            <!--
+			            <div>
+			            	<input name="catbutton" type="button" class="button" value="Add Category" />
+			            </div>
+			            -->
+			            <div class="form-group">
+			                <label>What did you spend on everything else?</label>
+			                <span>$</span><input class="currency" id="otherSpending" />
+			            </div>
+			            <div class="form-group">
+			                <label>What was your % Cash Back?</label>
+			                <span>%</span><input class="percentage" id="otherPercentCashBack" />
+			            </div>
+			            <div class="form-group">
+			                <label>How much did you pay off?</label>
+			                <span>$</span><input class="currency" id="payOffAmount" />
+			            </div>
+			            <div class="form-group">
+			                <label>Interest rate on credit card?</label>
+			                <span>%</span><input class="percentage" id="interestRate" />
+			            </div>
+			            <div>
+			            	<input name="calcbutton" type="button" class="button" value="Calculate" onclick="doCalculate()" />
+			            </div>
+			        </fieldset>
+			        <div class="results">
+			        <p>Results</p>
+			        	<div class="results-table">
+				        	<table>
+				        		<tr>
+				        			<td>Monthly Balance<span><input type="text" id="monthBalanceCalc"/></span></td>
+				        		</tr>
+				        		<tr>
+				        			<td>How much you will pay in interest?<span><input type="text" id="interestCalc"/></span></td>
+				        		</tr>
+				        		<tr>
+				        			<td>Cash back earned this month<span><input type="text" id="cashBackCalc"/></span></td>
+				        		</tr>
+				        		<tr>
+				        			<td>How much $ did you gain/lose?<span><input type="text" id="gainLoseCalc"/></span></td>
+				        		</tr>
+				        		<tr>
+				        			<td>Did you pay for rewards?<span><input type="text" id="rewardsPaid"/></span></td>
+				        		</tr>
+				        	</table>
+				        </div>	
+			        </div>
+			    </form>
+			</div>
+		</div>	
+	</section>
+
+	<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script src="script.js"></script> 
+</body>
+</html>
