@@ -1,0 +1,149 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+.form-container {
+	width: 640px;
+	margin: 0 auto;
+	border: 0.5px solid #36373C;
+    border-radius: 5px 5px 5px 5px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+#form {
+    background-color: #F7F7F7;
+    height: 675px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align:center;
+    border-radius: 0px 0px 5px 5px;
+}
+.form-header {
+	width: 620px;
+	text-align: left;
+    padding: 10px;
+	font-size: 20px;
+	color: #fff;
+    background: #2E394F;
+	margin: 0px auto;
+    border-radius: 5px 5px 0px 0px;
+}
+.form-sub-header {
+	width: 620px;
+	text-align: left;
+	margin: -20px 0px 30px 10px;
+	padding: 5px 10px;
+    font-size: 11px;
+    font-weight: bold;
+	color: #fff;
+    background: #5384BF;
+    margin: 0 auto;
+}
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #696969;
+    height: 20px;
+    width: 70%;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: left;
+    float: left;
+}
+.form-group select {
+    margin-top: 10px;
+	margin-left: -275px;
+	margin-right: 122px;
+	width: 150px;
+}
+
+.form-group input {
+    height: 20px;
+    width: 110px;
+    border: 1px solid #ddd;
+	    border-radius: 5px 5px 5px 5px;
+    margin-top: 15px;
+    margin-left: -15px;
+    text-align: right;
+    padding-right: 15px;
+}
+.form-group span {
+    margin-top: 15px;
+    margin-left: 20px;
+	float: left;
+	width: 15px;
+	text-align: right;
+	color: #5384BF;
+	font-weight: bold;
+}
+fieldset {
+	width: 100%;
+	margin: 0 auto;
+    border: none;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}		
+input[type=button] {
+	margin: 20px 25px 10px 450px;
+	padding:5px 15px; 
+	float: right;
+	background:#5384BF; 
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}		
+.results {
+	font-size: 14px;
+    font-weight: bold;
+    color: #696969;
+    float: left;
+    margin-left: 20px;
+    text-align: left;
+}
+.results-table table {
+	width: 600px;
+	border: 0.5px solid #ddd;
+}
+.results-table input {
+	border: none;
+	text-align: right;
+	color: #696969;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.results-table tr {
+	height: 35px;
+}
+.results-table td {
+	padding: 10px;
+}
+.results-table span {
+	float: right;
+}
+tr:nth-child(odd) {
+	   background-color: #EEF5FF;
+}
+tr:nth-child(even) {
+	   background-color: #fff;
+}
+
+tr:nth-child(odd) input {
+	   background-color: #EEF5FF;
+}
+tr:nth-child(even) input {
+	   background-color: #fff;
+	}
+
